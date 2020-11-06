@@ -6,30 +6,32 @@
     <title>E-Players</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a809e54b60.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header-top">
         <div class="content flex-spaceb-center">
             <img src="images/Logo 1.svg" alt="Logo E-Players">
             <nav class="menu">
-                <ul class="flex-spaceb-center">
+                <ul id="mylinks">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Resultados</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Cadastro/login</a></li>
                 </ul>
-            <a href="#" id="menu-bars"> 
-                <i class="fas fa-bars"></i>
-            </a>
+                <a href="#" class="icon" onclick="botaoDoMenu()"> 
+                    <i class="fas fa-bars"></i>
+                </a>
             </nav>
         </div>
     </header>
     <main>
         <section class="banner">
             <picture>
+                <source media="(max-width: 61.93em)" srcset="images/Banner768.jpg">
                 <source media="(max-width: 90em)" srcset="images/Banner1440.jpg">
-                <img src="images/Banner1920.jpg" alt="Pilotos de fórmula 1, Vamilton, Viccardo, Vetel, Verstapen">
+                <img src="images/Banner1440.jpg" alt="Pilotos de fórmula 1, Vamilton, Viccardo, Vetel, Verstapen">
             </picture>
             <div class="banner-container">
                 <div class="banner-content">
@@ -48,7 +50,7 @@
                     <li><a href="#"><img src="images/logo-lol-300x131 1.png" alt="Logo League of Legends"></a></li>
                     <li><a href="#"><img src="images/Counter-Strike-Logo-Transparent-PNG 1.png" alt="Logo Counter"></a></li>
                     <li><a href="#"><img src="images/4bcd537b6c034e297f0030cf08887426 1.png" alt="Logo do Valorant"></a></li>
-                    <li><a href="#"><img src="images/800px-FIFA_series_logo 1.png" alt="logo do Fifa"></a></li>
+                    <li><a href="#"><img src="images/800px-FIFA_series_logo 1.png" alt="logo do Fifa" style="width:8em"></a></li>
                 </ul>
             </div>
         </section>
@@ -70,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="games">
+        <section class="games2">
             <div class="content flex-spacear-center">
                 <div class="partidas-aovivo">
                     <h2>Ao<br>Vivo</h2>
@@ -296,5 +298,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        function botaoDoMenu() {
+          var ulDoMenu = document.getElementById("mylinks");
+          if (ulDoMenu.style.display === "none") {
+            ulDoMenu.style.display = "flex";
+          } else {
+            ulDoMenu.style.display = "none";
+          }
+        }
+    </script> 
 </body>
 </html>

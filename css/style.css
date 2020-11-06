@@ -42,6 +42,7 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
 .flex-spacear-center{
     display: flex;
     justify-content: space-around;
@@ -49,6 +50,7 @@ img{
 }
 .header-top img{
     max-width: 21.18em;
+    margin-right: 1.5em;
 }
 .menu{
     width: 100%;
@@ -56,6 +58,12 @@ img{
 }
 .menu ul{
     list-style-type: none;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    display: none;
 }
 .menu a{
     color: #fff;
@@ -69,9 +77,7 @@ img{
     background-color: var(--red);
     text-shadow:0 0 5px #fff ;
 }
-#menu-bars{
-    display: none;
-}
+
 .banner{
     position: relative;
 }
@@ -103,10 +109,10 @@ img{
     color: #fff;
 }
 .banner-text h1{
-    font-size: 5em;
+    font-size: 4.7em;
 }
 .banner-text p{
-    font-size:1.56em;
+    font-size:1.6em;
 }
 .banner-text a{
     color: #fff;
@@ -349,22 +355,67 @@ img{
 
 /* desktop realizado */
 
-/* Até 1199px */
+/* do 992px Até 1199px */
 @media screen and (max-width: 74.93em){
-
+    .header-top img{
+        max-width: 19em;
+        margin-right: 1em;
+    }
+    .menu a{
+        font-size: 1.2em;
+    }
+    .menu a:hover{
+        background-color:rgba(255, 255, 255, 0) ;
+        text-shadow: 0 0 5px #fff;
+    }
+    .banner-text h1 {
+        font-size: 4em;
+    }
+    .banner-text p {
+        font-size: 1.45em;
+    }
+    .games img {
+        width: 9.8em;
+    }
+    .games ul a:hover img {
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+    .content-about img{
+        width: 28em;
+        position: absolute;
+        right: 0;
+    }
+    .text-about h2 {
+        margin-bottom: 0.5em;
+        font-size: 2em;
+        margin-top: 0.2em;
+    }
+    .text-about p{
+        font-size: 1.062em;
+    }
+    .partidas-aovivo, .games-embreve {
+        font-size: 1.45em;
+    }
+    .cardnews{
+        width: 13em;
+    }
+    .socials{
+        margin-left: 1em;
+    }
 }
 
-/* Até 991px */
+/* do 768px Até 991px */
 @media screen and (max-width: 61.93em){
     
 }
-
-/* Até 768 */
+        
+/* 576 Até 767 */
 @media screen and (max-width: 47.93em){
    
 }
 
-/* Até 576px */
+/* Até 575px */
 @media screen and (max-width: 36em){
     
 }
