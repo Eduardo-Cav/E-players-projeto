@@ -513,6 +513,33 @@ img{
     }
 }
 @media screen and (max-width: 48em){
+    .card1,.card2{
+        display: none;
+    }
+    .bg-news > .flex-spaceb-center{
+        display: flex;
+        flex-direction: column;
+    }
+    .next-games{
+        width: 50%;
+        padding-bottom: 1em;
+    }
+    .socials input{
+        display: none;
+    }
+    .socials h3{
+        display: none;
+    }
+    .logo-rodape {
+        width: 14.06em;
+        margin-left: 0.3em;
+    }
+    .socials h2 {
+        color: white;
+        margin-left: 1em;
+        width: 70%;
+        margin-right: 0.1em;
+    }
     
 }  
 /* 576 Até 767 */
@@ -523,4 +550,5 @@ img{
 /* Até 575px */
 @media screen and (max-width: 36em){
     
+
 }
