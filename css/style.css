@@ -36,6 +36,9 @@ img{
     height: 100%;
     /* background-color:aqua; */
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .flex-spaceb-center{
     display: flex;
@@ -196,6 +199,10 @@ img{
     font-size: 1.56em;
     justify-content: space-around;
 }
+.games2 span{
+    display: flex;
+    flex-wrap: wrap;
+}
 .partida{
     width: 9.5em;
     display: flex;
@@ -247,6 +254,7 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
 .cardnews{
     width: 15em;
     height: 22.5em;
@@ -254,6 +262,11 @@ img{
     color: #fff;
     margin-bottom: 2em;
     box-shadow: 0 0 10px rgba(92, 92, 92);
+    transition: 0.3s;
+}
+.cardnews:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 .cardnews h3{
     padding: 0.6em 0.5em;
@@ -320,6 +333,9 @@ img{
 .socials h2{
     color: white;
 }
+.socials h3{
+    color: white;
+}
 .siga-nos{
     display: flex;
     align-items: center;
@@ -348,9 +364,15 @@ img{
     font-size: 0.875em;
     margin-bottom: 0.5em;
 }
+.logo-embaixo{
+    display: none;
+}
 
 .rodape{
     padding: 1em 0;
+}
+.rodape ul a:hover{
+    text-decoration: underline;
 }
 
 /* desktop realizado */
@@ -368,16 +390,16 @@ img{
         background-color:rgba(255, 255, 255, 0) ;
         text-shadow: 0 0 5px #fff;
     }
-    .banner-text h1 {
+    .banner-text h1{
         font-size: 4em;
     }
-    .banner-text p {
+    .banner-text p{
         font-size: 1.45em;
     }
-    .games img {
+    .games img{
         width: 9.8em;
     }
-    .games ul a:hover img {
+    .games ul a:hover img{
         transition: 0.5s;
         transform: scale(1.2);
     }
@@ -386,7 +408,7 @@ img{
         position: absolute;
         right: 0;
     }
-    .text-about h2 {
+    .text-about h2{
         margin-bottom: 0.5em;
         font-size: 2em;
         margin-top: 0.2em;
@@ -394,7 +416,7 @@ img{
     .text-about p{
         font-size: 1.062em;
     }
-    .partidas-aovivo, .games-embreve {
+    .partidas-aovivo, .games-embreve{
         font-size: 1.45em;
     }
     .cardnews{
@@ -403,16 +425,99 @@ img{
     .socials{
         margin-left: 1em;
     }
+ 
 }
 
 /* do 768px Até 991px */
 @media screen and (max-width: 61.93em){
-    
+    .menu ul{
+        width: 100%;
+        height: 200px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        background-color: var(--background);
+        left: 0;
+        margin-top: 10px;
+        z-index: 1;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .menu a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        padding: 0.9em 0.67em;
+        /* background-color: red; */
+    }
+    .banner-text{
+        width: 65%;
+    }
+    .banner img{
+        opacity: 0.6;
+    }
+    .games img {
+        width: 7.5em;
+    }
+    .games ul a:hover img {
+        transition: none;
+        transform: none;
+    }
+    .text-about{
+        width: 100%;
+        margin-top: 5em;
+    }
+    .content-about img{
+        display: none;
+    }
+    .games2{
+        width: 95%;
+        height: 15em;
+    }
+    .partidas-aovivo, .games-embreve{
+        flex-direction: column;
+        border: solid 1px #fff;
+    }
+    .games2 span{
+        display: inline;
+    }
+    .partida{
+        margin: 0.5em 1em
+    }
+    .content-news{
+        justify-content: space-around;
+    }
+    .card1,.card2{
+        display: none;
+    }
+    .tabela-mobile{
+        width: 100%;
+    }
+    .next-games{
+        width: 27%;
+    }
+    .um{
+        display: none;
+    }
+    .logo-rodape {
+        width: 14.06em;
+    }
 }
-        
+@media screen and (max-width: 48em){
+    
+}  
 /* 576 Até 767 */
 @media screen and (max-width: 47.93em){
-   
+    
 }
 
 /* Até 575px */
