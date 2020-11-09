@@ -592,6 +592,45 @@ img{
 
 /* Até 575px */
 @media screen and (max-width: 36em){
-    
+    .header-top img {
+        max-width: 13em;
+        margin-right: 1em;
+    } 
+    .banner-content{
+        width:unset;
+    } 
+    .banner-text h1 {
+        font-size: 3em;
+    }
+    .banner-text p {
+        font-size: 1.17em;
+    }
+    .banner img {
+        opacity: 0.38;
+    }
+    .lol{
+        display: none;
+    }
+    .games img {
+        width: 7em;
+    }
+    .text-about p {
+        font-size: 1em;
+    }
+    .text-about{
+        margin-top: unset;
+    }
+    .matches-bg{
+        width: 100%;
+    }
+    .next-games{
+        width: 70%;
+    }
+    .links ul{
+        list-style-type: none;
+    }
+    .socials{
+        margin-left: unset;
+    }
 
 }
