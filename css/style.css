@@ -544,7 +544,50 @@ img{
 }  
 /* 576 Até 767 */
 @media screen and (max-width: 47.93em){
-    
+    .banner-container{
+        width: 80%;
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .banner-text h1{
+        font-size: 3.77em;
+    }
+    .banner-text p{
+        font-size: 1.44em;
+    }
+    .fifa{
+        display: none;
+    }
+    .games2{
+        height: 27em;
+    }
+    .games2 > .flex-spacear-center{
+        display: flex;
+        flex-direction: column;
+    }
+    .card4{
+        display: none;
+    }
+    .news h2{
+        display: flex;
+        justify-content: center;
+    }
+    .teams1{
+        display: none;
+    }
+    .logo-rodape{
+        display: none;
+    }
+    .logo-embaixo{
+        width: 15em;
+        display: flex;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .socials h2{
+        width: 50%;
+    }
 }
 
 /* Até 575px */
